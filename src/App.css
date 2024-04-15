@@ -1,0 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.App {
+    text-align: center;
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #282c34;
+    color: white;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+footer p {
+    margin: 0;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+}
