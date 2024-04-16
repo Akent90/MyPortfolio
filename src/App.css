@@ -50,3 +50,42 @@ footer p {
     margin: 20px;
     display: inline-block;
 }
+
+/* Portfolio Section Styling */
+section {
+    margin: 2rem;
+  }
+  
+  section > div {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+  }
+  
+  .project {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  
+  .project img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
+  
+  .project h3 {
+      margin: 0.5rem 1rem;
+  }
+  
+  .project a {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      color: #2a7ae2;
+      display: block;
+      border-top: 1px solid #ddd;
+  }
