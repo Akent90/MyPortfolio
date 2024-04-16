@@ -9,3 +9,5 @@ const Navigation = () => (
         <NavLink to="/resume">Resume</NavLink>
     </nav>
 );
+
+export default Navigation;
