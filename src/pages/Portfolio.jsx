@@ -1,8 +1,15 @@
 import React from 'react';
 import Project from '../components/Project/Project';
+import festiForecastImage from '../assets/images/FestiForecast.png';
 
 const projects = [
-    // Add details of projects to this array
+    {
+        id: 'festiforecast',
+        title: 'FestiForecast',
+        imageUrl: festiForecastImage,
+        deployedUrl: 'https://leadencat.github.io/festiforecast/',
+        repoUrl: 'https://github.com/Akent90/FestiForecast'
+    },
 ];
 
 const Portfolio = () => (
