@@ -1,8 +1,10 @@
 import React from 'react';
+import headshot from '../assets/images/Headshot.jpeg';
 
 const About = () => (
-    <section>
+    <section id="about" className="selected">
         <h2>About Me</h2>
+        <img src={headshot} alt="Alex" className="headshot" />
         <p>
             Hi, I'm Alex! At the core of my professional and personal ethos lies a
             deep commitment to the principles of LDRSHIP - Loyalty, Duty, Respect,
