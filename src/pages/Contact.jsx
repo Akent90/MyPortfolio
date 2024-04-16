@@ -8,38 +8,38 @@ const Contact = () => {
 
     const validateField = (fieldName, value) => {
         let isValid = true;
+        let newErrors = {...errors}; 
+
         if (value.trim() === '') {
-            setErrors(prevErrors => ({ ...prevErrors, [fieldName]: 'This fiels is required' }));
+            newErrors[fieldName] = 'This field is required';  
             isValid = false;
         } else {
-            setErrors(prevErrors => {
-                const { [field]: removedError, ...restErrors } = prevErrors;
-                return restErrors;
-            });
+            delete newErrors[fieldName]; 
         }
 
-        if (field === 'email' && value.trim() !== '') {
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (fieldName === 'email' && value.trim() !== '') {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  
             if (!emailRegex.test(value.trim())) {
-                setErrors(prevErrors => ({ ...prevErrors, email: 'Please enter a valid email address' }));
-                isValid= false;
+                newErrors['email'] = 'Please enter a valid email address';  
+                isValid = false;
             }
         }
 
+        setErrors(newErrors); 
         return isValid;
     };
 
     const handleBlur = (event) => {
         const { name, value } = event.target;
-        validateField(name, value);
+        validateField(name, value);  
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
         let formIsValid = true;
-        formIsValid &=  validateField('name', name);
-        formIsValid &= validateField('email', email);
-        formIsValid &= validateField('message', message);
+        formIsValid = validateField('name', name) && formIsValid;
+        formIsValid = validateField('email', email) && formIsValid;
+        formIsValid = validateField('message', message) && formIsValid;
 
         if (formIsValid) {
             console.log('Form is valid and can be submitted');
