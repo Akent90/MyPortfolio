@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from '../components/Project/Project';
 import festiForecastImage from '../assets/images/FestiForecast.png';
+import vibeVaultImage from '../assets/images/VibeVault.png';
 
 const projects = [
     {
@@ -9,6 +10,13 @@ const projects = [
         imageUrl: festiForecastImage,
         deployedUrl: 'https://leadencat.github.io/festiforecast/',
         repoUrl: 'https://github.com/Akent90/FestiForecast'
+    },
+    {
+        id: 'vibevault',
+        title: 'VibeVault',
+        imageUrl: vibeVaultImage, 
+        deployedUrl: 'https://vibevault-4b99d03d3c47.herokuapp.com/',
+        repoUrl: 'https://github.com/Akent90/VibeVault'
     },
 ];
 
