@@ -6,10 +6,10 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const [errors, setErrors] = useState({});
 
-    const validateField = (fiels, value) => {
+    const validateField = (fieldName, value) => {
         let isValid = true;
         if (value.trim() === '') {
-            setErrors(prevErros => ({ ...prevErrors, [field]: 'This fiels is required' }));
+            setErrors(prevErrors => ({ ...prevErrors, [fieldName]: 'This fiels is required' }));
             isValid = false;
         } else {
             setErrors(prevErrors => {
