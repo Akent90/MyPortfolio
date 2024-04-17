@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46cf6f16.css",
+    "main.js": "/static/js/main.d02c468e.js",
+    "static/media/Headshot.jpeg": "/static/media/Headshot.61c10df0c09d964b8d5c.jpeg",
+    "static/media/VibeVault.png": "/static/media/VibeVault.ef2900475fdd3e105bca.png",
+    "static/media/FestiForecast.png": "/static/media/FestiForecast.8503cf092d760279015c.png",
+    "static/media/github.png": "/static/media/github.6149aa5ccbc036755594.png",
+    "index.html": "/index.html",
+    "main.46cf6f16.css.map": "/static/css/main.46cf6f16.css.map",
+    "main.d02c468e.js.map": "/static/js/main.d02c468e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46cf6f16.css",
+    "static/js/main.d02c468e.js"
+  ]
+}

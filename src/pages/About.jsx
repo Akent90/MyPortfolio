@@ -19,13 +19,6 @@ const About = () => (
             the relentless pursuit of meaningful goals.
         </p>
         <p>
-            As I look to the future, I aim to be an integral part of a team, lead
-            with purpose, and contribute to building something that positively
-            impacts our collective digital future. My journey has been one of continuous learning, adaptation, and a
-            relentless pursuit of excellence, always with an eye towards serving
-            others and bettering our world.
-        </p>
-        <p>
             I was first introduced to programming through my occupational
             specialty in the Army. Executing complex programming protocols for
             radar hard drives, configuring and managing local area networks, and
@@ -33,6 +26,13 @@ const About = () => (
             completely solidified my love for functional utility. I am driven to
             integrate this practical reliability with streamlined efficiency to
             continuously bridge utility and elegance.
+        </p>
+        <p>
+            As I look to the future, I aim to be an integral part of a team, lead
+            with purpose, and contribute to building something that positively
+            impacts our collective digital future. My journey has been one of continuous learning, adaptation, and a
+            relentless pursuit of excellence, always with an eye towards serving
+            others and bettering our world.
         </p>
     </section>
 );
